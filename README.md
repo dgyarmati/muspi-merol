@@ -1,2 +1,2 @@
 # static-weblog
-Just a two-column, one-footer, sticky-title, semi-responsive, dummy little static blog. With floats!
+Just a two-column, sticky-footer, semi-responsive, dummy little static website mockup. With floats!
