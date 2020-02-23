@@ -1,0 +1,148 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: auto;
+    min-height: 100%;
+}
+
+h1, h2, h3 {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.title {
+    height: 30%;
+    padding: 3rem 0 3rem 0;
+    text-align: center;
+    background-color: #82AC9F;
+    color: #0A3055;
+}
+
+.main {
+    float: right;
+    width: 85%;
+    height: 80rem;
+    overflow: scroll;
+}
+
+.main > article {
+    padding: 2rem 2rem 2rem 2rem;
+}
+
+.main :nth-child(odd) > h2 {
+    background-color: #829298;
+    color: #000036;
+}
+
+.main :nth-child(even) > h2 {
+    background-color: #94778B;
+    color: #000036;
+}
+
+.main :nth-child(odd) > div {
+    background-color: #829298;
+    color: #2A002A;
+}
+
+.main :nth-child(even) > div {
+    background-color: #94778B;
+    color: #1C2A43;
+}
+
+.main :nth-child(odd) > div > p {
+    background-color: #829298;
+    color: #2A002A;
+}
+
+.main :nth-child(even) > div > p {
+    background-color: #94778B;
+    color: #1C2A43;
+}
+
+.main :nth-child(odd) {
+    background-color: #829298;
+}
+
+.main :nth-child(even) {
+    background-color: #94778B;
+}
+
+article:last-of-type {
+    padding-bottom: 20rem;
+}
+
+footer {
+    font-size: 1.3rem;
+    position: fixed;
+    bottom: 0;
+    height: 9.3%;
+    background-color: #82AC9F;
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+    color: #2C3E50;
+}
+
+footer :last-child {
+    font-size: 1rem;
+}
+
+.sidebar {
+    float: left;
+    height: 80rem;
+    width: 15%;
+    background-color: #82C09A;
+    color: #16405B;
+}
+
+.sidebar > article {
+    height: 73.5rem;
+    padding: 2rem 2rem 0 2rem;
+    margin: 1rem;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+    .sidebar, .main {
+      float: none;
+      width: 100%;
+    }
+
+    .main {
+        height: 100%;
+    }
+
+    .sidebar {
+        height: 13rem;
+    }
+
+    .sidebar > article {
+        height: 73.5rem;
+        padding: 2rem 2rem 0 2rem;
+        margin: 0;
+    }
+  }
